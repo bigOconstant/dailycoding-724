@@ -12,13 +12,15 @@ For example, given the following tree:
 
 ```
 
-     '+'
-   /    \
- '*'     '-'
- / \    /    \
-5  4    100   '/'
-             /   \
-            20    2
+    *
+   / \
+  +    +
+ / \  / \
+3  2  4  5
 ``` 
 
-You should return 110;
+You should return 45, as it is (3 + 2) * (4 + 5).
+
+compile rust version with `rustc -o a.out main.rs`
+
+compile cpp version with `g++ -o a.out main.cpp`

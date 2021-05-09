@@ -12,11 +12,13 @@ For example, given the following tree:
 
 ```
 
-    *
-   / \
-  +    +
- / \  / \
-3  2  4  5
+     '+'
+   /    \
+ '*'     '-'
+ / \    /    \
+5  4    100   '/'
+             /   \
+            20    2
 ``` 
 
-You should return 45, as it is (3 + 2) * (4 + 5).
+You should return 110;

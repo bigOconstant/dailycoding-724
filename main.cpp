@@ -30,13 +30,16 @@ class Btree {
 };
 
 int main() {
-    Btree* root = new Btree("*");
-    root->left = new Btree("+");
-    root->right = new Btree("+");
-    root->left->left = new Btree("3");
-    root->left->right = new Btree("2");
-    root->right->right = new Btree("5");
-    root->right->left = new Btree("4");
+    Btree* root = new Btree("+");
+    root->left = new Btree("*");
+    root->right = new Btree("-");
+    root->left->left = new Btree("5");
+    root->left->right = new Btree("4");
+    root->right->right = new Btree("/");
+    root->right->left = new Btree("100");
+
+    root->right->right->right = new Btree("2");
+    root->right->right->left = new Btree("20");
 
     std::cout<<"answer:"<<root->evaluate()<<std::endl;
     return 0;

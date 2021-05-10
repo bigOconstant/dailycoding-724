@@ -24,3 +24,5 @@ You should return 45, as it is (3 + 2) * (4 + 5).
 compile rust version with `rustc -o a.out main.rs`
 
 compile cpp version with `g++ -o a.out main.cpp`
+
+compile go version with `go build -o a.out main.go`
